@@ -16,6 +16,8 @@ fun main() {
     values.forEach {
         println(it)
     }
+
+
     println("----------------------------------------")
     for (index in values.indices) {
      println(values[index])
