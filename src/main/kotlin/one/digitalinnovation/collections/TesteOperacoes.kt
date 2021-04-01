@@ -14,4 +14,7 @@ fun main() {
 
     println("---------------------------")
     salariosMaiorQue2000.forEach { println(it) }
+
+    println("---------------------------")
+    println(salarios2.count { it in 2000.0..5000.00 })
 }
