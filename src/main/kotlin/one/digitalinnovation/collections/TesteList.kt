@@ -12,6 +12,7 @@ fun main() {
     println("-------------")
     println(funcionarios.find { it.nome == "Maria" })
 
+    println("-----SORTED BY --------")
      funcionarios
          .sortedBy { it.salario }
          .forEach { println(it) }
