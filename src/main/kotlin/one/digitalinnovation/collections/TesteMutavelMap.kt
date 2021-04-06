@@ -9,7 +9,7 @@ fun main() {
 
     repositorio.create(joao.nome, joao)
     repositorio.create(pedro.nome, pedro)
-    repositorio.create(maria.nome, maria)+
+    repositorio.create(maria.nome, maria)
 
     println(repositorio.findById(joao.nome))
 }
