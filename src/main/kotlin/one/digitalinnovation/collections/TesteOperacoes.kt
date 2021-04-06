@@ -6,8 +6,8 @@ fun main() {
     salarios2.forEach { println(it) }
 
     println("---------------------------")
-    println("Menor salário: " + salarios2.min())
-    println("Maior salário: " + salarios2.max())
+    println("Menor salário: " + salarios2.minOrNull())
+    println("Maior salário: " + salarios2.maxOrNull())
     println("Média salarial: " + salarios2.average())
 
     val salariosMaiorQue2000 = salarios2.filter { it > 2600 }
