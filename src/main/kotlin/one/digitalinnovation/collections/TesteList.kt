@@ -5,12 +5,16 @@ fun main() {
     val maria = Funcionario("Maria", 3200.15)
     val pedro = Funcionario("Pedro", 1850.27)
 
-    val listaFuncionarios = listOf(joao, maria, pedro)
+    val funcionarios = listOf(joao, maria, pedro)
 
-    listaFuncionarios.forEach { println(it) }
+    funcionarios.forEach { println(it) }
 
     println("-------------")
-    println(listaFuncionarios.find { it.nome == "Maria" })
+    println(funcionarios.find { it.nome == "Maria" })
+
+     funcionarios
+         .sortedBy { it.salario }
+         .forEach { println(it) }
 }
 
 data class Funcionario(
